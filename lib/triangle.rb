@@ -29,7 +29,7 @@ class Triangle
       else
         @kind = :scalene
       end
-      
+      @kind
       
       # if sides.uniq.length == 1
       #   @kind = :equilateral
