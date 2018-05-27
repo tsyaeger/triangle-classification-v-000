@@ -20,7 +20,6 @@ class Triangle
       raise TriangleError
        
     else
-      
       if sides.uniq.length == 1
         :equilateral
       elsif sides.uniq.length == 2
