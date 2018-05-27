@@ -20,6 +20,7 @@ class Triangle
       raise TriangleError
        
     else
+      
       if sides.uniq.length == 1
         :equilateral
       elsif sides.uniq.length == 2
@@ -29,9 +30,7 @@ class Triangle
       end
     
     end 
-
   end
-  
 end
 
 class TriangleError < StandardError
