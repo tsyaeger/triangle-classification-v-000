@@ -21,23 +21,14 @@ class Triangle
        
     else
       
-      case sides
-      when sides.uniq.length == 1
+      if sides.uniq.length == 1
         @kind = :equilateral
-      when sides.uniq.length == 2
+      elsif sides.uniq.length == 2
       	@kind = :isosceles
       else
         @kind = :scalene
       end
-      @kind
-      
-      # if sides.uniq.length == 1
-      #   @kind = :equilateral
-      # elsif sides.uniq.length == 2
-      # 	@kind = :isosceles
-      # else
-      #   @kind = :scalene
-      # end
+    @kind
     end 
 
   end
