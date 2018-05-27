@@ -15,7 +15,6 @@ class Triangle
   def kind 
     
     perms = @sides.permutation.to_a 
-    puts perms.inspect
     
     if @sides.any?{|side| side < 0} || perms.any?{|perm| perm[0] + perm[1] < perm[2]}
       puts "nope"
