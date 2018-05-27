@@ -29,9 +29,9 @@ class Triangle
       else
         kind = "scalene"
       end
-      puts kind
+
     end 
-    
+    kind
   end
   
 end
