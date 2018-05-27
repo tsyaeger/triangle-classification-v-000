@@ -2,7 +2,7 @@
 
 class Triangle
   
-  attr_accessor :sides
+  attr_accessor :sides, :kind
   
   def initialize(a,b,c)
     @sides = []
@@ -22,13 +22,13 @@ class Triangle
     else
       
       if sides.uniq.length == 1
-        kind = "equilateral"
+        @kind = "equilateral"
       elsif sides.uniq.length == 2
-      	kind = "isosceles"
+      	@kind = "isosceles"
       else
-        kind = "scalene"
+        @kind = "scalene"
       end
-      kind
+      @kind
     end 
 
   end
